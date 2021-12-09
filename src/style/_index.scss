@@ -1,0 +1,134 @@
+//loader
+.loader {
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.lds-ring {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+
+.lds-ring div {
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  border: 8px solid #fff;
+  border-radius: 50%;
+  animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  border-color: #fff transparent transparent transparent;
+}
+
+.lds-ring div:nth-child(1) {
+  animation-delay: -0.45s;
+}
+
+.lds-ring div:nth-child(2) {
+  animation-delay: -0.3s;
+}
+
+.lds-ring div:nth-child(3) {
+  animation-delay: -0.15s;
+}
+
+@keyframes lds-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.navbar {
+  border-bottom: 40px solid $black;
+}
+
+.hero {
+  background: url('../images/3ewLAKn.png') bottom center;
+  background-size: cover;
+  max-width: 100%;
+  height: 420px;
+  display: flex;
+  align-items: flex-end;
+  padding: 3rem 3.25rem;
+}
+
+.transport-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .card-img {
+    width: 115px;
+    height: 115px;
+    border: 3px solid $black;
+    text-align: center;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0.5rem;
+  }
+}
+
+.transport-arrow {
+  position: relative;
+
+  &:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -30%;
+    transform: translate(-50%, -50%);
+    border: 10px solid $black;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+
+    @include media-breakpoint-up(md) {
+      left: 105%;
+      bottom: 50%;
+      border-left: 10px solid $black;
+      border-top: 10px solid transparent;
+    }
+  }
+}
+
+.card-tag {
+  background-color: $black;
+  color: $white;
+  position: absolute;
+  top: 3%;
+  right: -2%;
+  padding: 0.5rem 1.5rem;
+}
+
+.message {
+  font-size: 0.875rem;
+  position: static;
+  color: $danger;
+
+  @include media-breakpoint-up(md) {
+    position: absolute;
+    transform: translate(0, -50%);
+    top: 50%;
+    left: 102%;
+    white-space: nowrap;
+  }
+}

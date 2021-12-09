@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WOWOROOM</title>
+  <link rel="shortcut icon" href="./src/images/favicon.ico" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Outlined" rel="stylesheet">
+  <link rel="stylesheet" href="./dist/all.css">
+</head>
+
+<body>
+  <div class="loader">
+    <div class="lds-ring">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </div>
+  <nav class="navbar navbar-expand-lg navbar-light py-1.5 mb-2">
+    <div class="container">
+      <h1 class="lh-1"><a class="navbar-brand fs-4 fw-bold m-0" href="#">WOWOROOM</a></h1>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav fs-5 text-center ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#bedAdvantage">床墊優勢</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#recommend">好評推薦</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#transport">運送方式</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#orderInfo">立即預訂</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <header class="container">
+    <div class="hero">
+      <h2 class="text-white">窩窩家居<br>跟您一起品味生活</h2>
+    </div>
+  </header>
+  <main>
+    <!-- 床墊優勢 -->
+    <section class="py-3.75" id="bedAdvantage">
+      <div class="container">
+        <h3 class="text-center mb-1.75">床墊優勢</h3>
+        <div class="row justify-content-center">
+          <div class="col-lg-4 d-flex flex-column align-items-center mb-2">
+            <img src="./src/images/tR426y5.png" class="w-100 object-cover mb-0.5" alt="原木料環保">
+            <p class="h5 text-center">原木料環保</p>
+          </div>
+          <div class="col-lg-4 d-flex flex-column align-items-center mb-2">
+            <img src="./src/images/Fd2MiBb.png" class="w-100 object-cover mb-0.5" alt="好收納">
+            <p class="h5 text-center">好收納</p>
+          </div>
+          <div class="col-lg-4 d-flex flex-column align-items-center">
+            <img src="./src/images/5n1uTFh.png" class="w-100 object-cover mb-0.5" alt="好組裝">
+            <p class="h5 text-center">好組裝</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- 家具比較 -->
+    <section class="bg-light pt-3 pb-4">
+      <div class="container">
+        <h3 class="text-center mb-2">家具比較</h3>
+        <div class="table-responsive">
+          <table class="table align-middle text-center">
+            <thead>
+              <tr class="h5">
+                <th scope="col"></th>
+                <th scope="col" class="fw-normal">窩窩系統模組家具</th>
+                <th scope="col" class="text-dark fw-normal">組合式家具</th>
+                <th scope="col" class="text-dark fw-normal">實木家具</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row" class="h5">可單人自行組裝</th>
+                <td>
+                  <i class="material-icons-outlined text-primary">done</i>
+                </td>
+                <td class="text-dark">不一定</td>
+                <td></td>
+              </tr>
+              <tr>
+                <th scope="row" class="h5">可多次重複拆裝</th>
+                <td>
+                  <i class="material-icons-outlined text-primary">done</i>
+                </td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <th scope="row" class="h5">床墊規格彈性大</th>
+                <td>
+                  <i class="material-icons-outlined text-primary">done</i>
+                </td>
+                <td class="text-dark">不一定</td>
+                <td class="text-dark">不一定</td>
+              </tr>
+              <tr>
+                <th scope="row" class="h5">材質可長久使用</th>
+                <td>
+                  <i class="material-icons-outlined text-primary">done</i>
+                </td>
+                <td></td>
+                <td>
+                  <i class="material-icons-outlined text-primary">done</i>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row" class="h5">小客車即可搬運</th>
+                <td>
+                  <i class="material-icons-outlined text-primary">done</i>
+                </td>
+                <td class="text-dark">不一定</td>
+                <td></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+    <!-- 好評推薦 -->
+    <section class="bg-secondary pt-3.75 pb-5" id="recommend">
+      <div class="container">
+        <h3 class="text-center text-white mb-2">好評推薦</h3>
+        <div class="js-recommendWall overflow-x-auto hidescroll">
+          <ul class="list-unstyled d-flex gap-1.875 ms-6 mb-1.25">
+            <li class="d-flex bg-white w-min-350px h-96px">
+              <img src="./src/images/cXcOLhu.png" alt="Jodan 雙人床架" class="object-cover">
+              <div>
+                <div class="px-1 py-0.75">
+                  <div class="d-flex align-items-center mb-0.5">
+                    <img src="./src/images/I9L7WOr.png" alt="王六角" class="w-40px me-0.5">
+                    <div>
+                      <h4 class="h6">王六角</h4>
+                      <small class="text-primary">Jodan 雙人床架</small>
+                    </div>
+                  </div>
+                  <p>CP值很高。</p>
+                </div>
+              </div>
+            </li>
+            <li class="d-flex bg-white w-min-350px h-96px">
+              <img src="./src/images/BefHmH2.png" alt="Antony 雙人床架" class="object-cover">
+              <div>
+                <div class="px-1 py-0.75">
+                  <div class="d-flex align-items-center mb-0.5">
+                    <img src="./src/images/CUFGfay.png" alt="Leaf" class="w-40px me-0.5">
+                    <div>
+                      <h4 class="h6">Leaf</h4>
+                      <small class="text-primary">Antony 雙人床架</small>
+                    </div>
+                  </div>
+                  <p>很喜歡～還有送三年保固～</p>
+                </div>
+              </div>
+            </li>
+            <li class="d-flex bg-white w-min-350px h-96px">
+              <img src="./src/images/3IATkJG.png" alt="Charles 系列儲物組合" class="object-cover">
+              <div>
+                <div class="px-1 py-0.75">
+                  <div class="d-flex align-items-center mb-0.5">
+                    <img src="./src/images/8WwZsLS.png" alt="美濃鄧子琪" class="w-40px me-0.5">
+                    <div>
+                      <h4 class="h6">美濃鄧子琪</h4>
+                      <small class="text-primary">Charles 系列儲物組合</small>
+                    </div>
+                  </div>
+                  <p>廚房必備美用品！</p>
+                </div>
+              </div>
+            </li>
+            <li class="d-flex bg-white w-min-350px h-96px">
+              <img src="./src/images/C0aYlUQ.png" alt="Antony 遮光窗簾" class="object-cover">
+              <div>
+                <div class="px-1 py-0.75">
+                  <div class="d-flex align-items-center mb-0.5">
+                    <img src="./src/images/NycuPVy.png" alt="isRaynotArray" class="w-40px me-0.5">
+                    <div>
+                      <h4 class="h6">isRaynotArray</h4>
+                      <small class="text-primary">Antony 遮光窗簾</small>
+                    </div>
+                  </div>
+                  <p>物超所值！</p>
+                </div>
+              </div>
+            </li>
+            <li class="d-flex bg-white w-min-350px h-96px">
+              <img src="./src/images/k2SNyxr.png" alt="Louvre 單人床架" class="object-cover">
+              <div>
+                <div class="px-1 py-0.75">
+                  <div class="d-flex align-items-center mb-0.5">
+                    <img src="./src/images/zdFOQIv.png" alt="程鮭魚" class="w-40px me-0.5">
+                    <div>
+                      <h4 class="h6">程鮭魚</h4>
+                      <small class="text-primary">Louvre 單人床架</small>
+                    </div>
+                  </div>
+                  <p>租屋用剛剛好</p>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <ul class="list-unstyled d-flex gap-1.875 mb-0">
+            <li class="d-flex bg-white w-min-350px h-96px">
+              <img src="./src/images/BefHmH2.png" alt="Louvre 雙人床架" class="object-cover">
+              <div>
+                <div class="px-1 py-0.75">
+                  <div class="d-flex align-items-center mb-0.5">
+                    <img src="./src/images/W7fyzp2.png" alt="小杰" class="w-40px me-0.5">
+                    <div>
+                      <h4 class="h6">小杰</h4>
+                      <small class="text-primary">Louvre 雙人床架</small>
+                    </div>
+                  </div>
+                  <p>非常舒適，有需要會再回購</p>
+                </div>
+              </div>
+            </li>
+            <li class="d-flex bg-white w-min-350px h-96px">
+              <img src="./src/images/eCaHhpW.png" alt="Charles 雙人床架" class="object-cover">
+              <div>
+                <div class="px-1 py-0.75">
+                  <div class="d-flex align-items-center mb-0.5">
+                    <img src="./src/images/8O1cOnG.png" alt="江八角" class="w-40px me-0.5">
+                    <div>
+                      <h4 class="h6">江八角</h4>
+                      <small class="text-primary">Charles 雙人床架</small>
+                    </div>
+                  </div>
+                  <p>品質不錯～</p>
+                </div>
+              </div>
+            </li>
+            <li class="d-flex bg-white w-min-350px h-96px">
+              <img src="./src/images/k2SNyxr.png" alt="Antony 床邊桌" class="object-cover">
+              <div>
+                <div class="px-1 py-0.75">
+                  <div class="d-flex align-items-center mb-0.5">
+                    <img src="./src/images/C0NDvSA.png" alt="juni讚神" class="w-40px me-0.5">
+                    <div>
+                      <h4 class="h6">juni讚神</h4>
+                      <small class="text-primary">Antony 床邊桌</small>
+                    </div>
+                  </div>
+                  <p>讚ㄉ！</p>
+                </div>
+              </div>
+            </li>
+            <li class="d-flex bg-white w-min-350px h-96px">
+              <img src="./src/images/bt1lsT2.png" alt="Louvre 單人床架" class="object-cover">
+              <div>
+                <div class="px-1 py-0.75">
+                  <div class="d-flex align-items-center mb-0.5">
+                    <img src="./src/images/hUsTZDm.png" alt="久安說安安" class="w-40px me-0.5">
+                    <div>
+                      <h4 class="h6">久安說安安</h4>
+                      <small class="text-primary">Louvre 單人床架</small>
+                    </div>
+                  </div>
+                  <p>一個躺剛剛好。</p>
+                </div>
+              </div>
+            </li>
+            <li class="d-flex bg-white w-min-350px h-96px">
+              <img src="./src/images/eCaHhpW.png" alt="Antony 雙人床架" class="object-cover">
+              <div>
+                <div class="px-1 py-0.75">
+                  <div class="d-flex align-items-center mb-0.5">
+                    <img src="./src/images/3ako6QX.png" alt="PeiQun" class="w-40px me-0.5">
+                    <div>
+                      <h4 class="h6">PeiQun</h4>
+                      <small class="text-primary">Antony 雙人床架</small>
+                    </div>
+                  </div>
+                  <p>睡起來很舒適</p>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+      </div>
+    </section>
+    <!-- 運送方式 -->
+    <section class="pt-2 pb-3.75" id="transport">
+      <div class="container">
+        <h3 class="text-center mb-2">運送方式</h3>
+        <div class="row mb-4.5 gy-3 gy-md-0">
+          <div class="col-md-3 transport-arrow">
+            <div class="transport-card">
+              <div class="card-img">
+                <i class="material-icons display-4">
+                  shopping_cart
+                </i>
+              </div>
+              <h4 class="h5">STEP.1</h4>
+              <h5 class="h6">選購商品</h5>
+            </div>
+          </div>
+          <div class="col-md-3 transport-arrow">
+            <div class="transport-card">
+              <div class="card-img">
+                <i class="material-icons display-4">
+                  list
+                </i>
+              </div>
+              <h4 class="h5">STEP.2</h4>
+              <h5 class="h6">填寫預定資料</h5>
+            </div>
+          </div>
+          <div class="col-md-3 transport-arrow">
+            <div class="transport-card">
+              <div class="card-img">
+                <i class="material-icons display-4">
+                  done
+                </i>
+              </div>
+              <h4 class="h5">STEP.3</h4>
+              <h5 class="h6">預定成功</h5>
+            </div>
+          </div>
+          <div class="col-md-3 transport-arrow">
+            <div class="transport-card">
+              <div class="card-img">
+                <i class="material-icons display-4">
+                  email
+                </i>
+              </div>
+              <h4 class="h5">STEP.4</h4>
+              <h5 class="h6">Email 付款資訊</h5>
+            </div>
+          </div>
+        </div>
+        <select class="js-category form-select w-255px mb-2">
+          <option value="" selected>全部</option>
+          <option value="床架">床架</option>
+          <option value="收納">收納</option>
+          <option value="窗簾">窗簾</option>
+        </select>
+        <div class="js-productList row g-1.75">
+          <div class="col-md-6 col-lg-3">
+            <div class="card rounded-0 border-0 position-relative">
+              <span class="card-tag">新品</span>
+              <img
+                src="https://hexschool-api.s3.us-west-2.amazonaws.com/custom/dp6gW6u5hkUxxCuNi8RjbfgufygamNzdVHWb15lHZTxqZQs0gdDunQBS7F6M3MdegcQmKfLLoxHGgV3kYunUF37DNn6coPH6NqzZwRfhbsmEblpJQLqXLg4yCqUwP3IE.png"
+                class="" alt="...">
+              <a href="#" class="btn btn-black rounded-0 mb-0.5">加入購物車</a>
+              <div class="">
+                <h4 class="h5">Antony 雙人床架／雙人加大</h4>
+                <del class="h5">NT$18,000</del>
+                <p class="h3">NT$12,000</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- 我的購物車 -->
+    <section class="bg-light pt-3 pb-5">
+      <div class="container">
+        <h3 class="text-center mb-2">我的購物車</h3>
+        <div class="js-cartList table-responsive hidescroll">
+          <table class="table align-middle fs-5">
+            <thead>
+              <tr>
+                <th scope="col" colspan="2" class="border-0 w-min-300px">品項</th>
+                <th scope="col" class="border-0 w-min-150px">單價</th>
+                <th scope="col" class="border-0 w-min-150px">數量</th>
+                <th scope="col" class="border-0 w-min-150px">金額</th>
+                <th scope="col" class="border-0 w-min-150px"></th>
+              </tr>
+            </thead>
+            <tbody class="border-top-0">
+              <tr>
+                <td colspan="2">
+                  <div class="d-flex">
+                    <div class="ratio ratio-1x1 w-max-80px me-0.5">
+                      <img
+                        src="https://hexschool-api.s3.us-west-2.amazonaws.com/custom/dp6gW6u5hkUxxCuNi8RjbfgufygamNzdVHWb15lHZTxqZQs0gdDunQBS7F6M3MdegcQmKfLLoxHGgV3kYunUF37DNn6coPH6NqzZwRfhbsmEblpJQLqXLg4yCqUwP3IE.png"
+                        alt="" class="object-cover">
+                    </div>
+                    <p>Antony 雙人床架／雙人加大</p>
+                  </div>
+                </td>
+                <td>NT$12,000</td>
+                <td><input type="number" min="1" max="10" value="1" class="form-control bg-light w-50"></td>
+                <td>NT$12,000</td>
+                <td>
+                  <button type="button" class="btn">
+                    <span class="material-icons-outlined">close</span>
+                  </button>
+                </td>
+              </tr>
+            </tbody>
+            <tfoot class="border-0">
+              <tr>
+                <td colspan="4" class="border-0"><button type="button"
+                    class="btn btn-outline-black px-1.25 py-0.625">刪除所有品項</button>
+                </td>
+                <td class="border-0">總金額</td>
+                <td class="border-0 h3">NT$13,980</td>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
+      </div>
+    </section>
+    <!-- 填寫預訂資料 -->
+    <section class="container pt-3.75 pb-5" id="orderInfo">
+      <div class="row">
+        <div class="col-md-6 mx-auto">
+          <h3 class="text-center mb-2">填寫預訂資料</h3>
+          <form class="js-orderForm">
+            <div class="mb-1.25">
+              <label for="customerName" class="form-label">姓名</label>
+              <div class="position-relative">
+                <input type="text" class="form-control w-100 me-0.5" id="customerName" name="姓名" placeholder="請輸入姓名">
+                <span class="message" data-msg="姓名"></span>
+              </div>
+            </div>
+            <div class="mb-1.25">
+              <label for="customerTel" class="form-label">電話</label>
+              <div class="position-relative">
+                <input type="tel" class="form-control w-100 me-0.5" id="customerTel" name="電話" placeholder="請輸入電話">
+                <span class="message" data-msg="電話"></span>
+              </div>
+            </div>
+            <div class="mb-1.25">
+              <label for="customerEmail" class="form-label">Email</label>
+              <div class="position-relative">
+                <input type="email" class="form-control w-100 me-0.5" id="customerEmail" name="Email"
+                  placeholder="請輸入 Email">
+                <span class="message" data-msg="Email"></span>
+              </div>
+            </div>
+            <div class="mb-1.25">
+              <label for="customerAddress" class="form-label">寄送地址</label>
+              <div class="position-relative">
+                <input type="text" class="form-control w-100 me-0.5" id="customerAddress" name="寄送地址"
+                  placeholder="請輸入寄送地址">
+                <span class="message" data-msg="寄送地址"></span>
+              </div>
+            </div>
+            <div class="mb-3">
+              <label for="customerPayment" class="form-label">交易方式</label>
+              <div class="position-relative">
+                <select class="form-select" id="customerPayment" name="交易方式">
+                  <option value="ATM" selected>ATM</option>
+                  <option value="信用卡">信用卡</option>
+                  <option value="超商付款">超商付款</option>
+                </select>
+                <!-- <span class="message" data-msg="交易方式"></span> -->
+              </div>
+            </div>
+            <button type="submit" class="js-orderBtn btn-lg btn-black d-block w-255px mx-auto">送出預訂資料</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+  <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+    <symbol id="check-circle-fill" fill="currentColor" viewBox="0 0 16 16">
+      <path
+        d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
+    </symbol>
+    <symbol id="exclamation-triangle-fill" fill="currentColor" viewBox="0 0 16 16">
+      <path
+        d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+    </symbol>
+  </svg>
+  <div class="js-alert">
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/validate.js/0.13.1/validate.min.js"></script>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="./dist/all.js"></script>
+</body>
+
+</html>

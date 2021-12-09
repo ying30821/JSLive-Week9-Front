@@ -1,0 +1,59 @@
+//utilities
+.object-cover {
+  object-fit: cover;
+}
+
+.overflow-x-auto {
+  overflow-x: auto;
+}
+
+.hidescroll {
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.hidescroll::-webkit-scrollbar {
+  display: none;
+}
+
+.w- {
+  &40\px {
+    width: 40px;
+  }
+
+  &255\px {
+    width: 255px;
+  }
+
+  &min {
+    &-150\px {
+      min-width: 150px;
+
+    }
+
+    &-300\px {
+      min-width: 300px;
+    }
+
+    &-350\px {
+      min-width: 350px;
+    }
+  }
+
+  &max-80px {
+    max-width: 80px;
+  }
+}
+
+.h- {
+  &96\px {
+    height: 96px;
+  }
+}
+
+.top-25 {
+  top: 25%
+}
