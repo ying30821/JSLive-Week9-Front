@@ -24,6 +24,10 @@
     width: 40px;
   }
 
+  &96\px {
+    width: 96px;
+  }
+
   &255\px {
     width: 255px;
   }
@@ -48,11 +52,11 @@
   }
 }
 
-.h- {
-  &96\px {
-    height: 96px;
-  }
-}
+// .h- {
+//   &96\px {
+//     height: 96px;
+//   }
+// }
 
 .top-25 {
   top: 25%

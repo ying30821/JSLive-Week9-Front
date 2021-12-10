@@ -11145,7 +11145,12 @@ textarea.form-control-lg {
 img {
   max-width: 100%;
   height: auto;
-  display: block; }
+  display: block;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none; }
 
 .object-cover {
   -o-object-fit: cover;
@@ -11167,6 +11172,9 @@ img {
 .w-40\px {
   width: 40px; }
 
+.w-96\px {
+  width: 96px; }
+
 .w-255\px {
   width: 255px; }
 
@@ -11181,9 +11189,6 @@ img {
 
 .w-max-80px {
   max-width: 80px; }
-
-.h-96\px {
-  height: 96px; }
 
 .top-25 {
   top: 25%; }
@@ -11304,7 +11309,7 @@ img {
   color: #fff;
   position: absolute;
   top: 3%;
-  right: -2%;
+  right: -5px;
   padding: 0.5rem 1.5rem; }
 
 .message {

@@ -103,11 +103,11 @@ function init() {
     const address = orderForm.querySelector("#customerAddress");
     const payment = orderForm.querySelector("#customerPayment");
     const user = {
-      name: name.value,
-      tel: tel.value,
-      email: email.value,
-      address: address.value,
-      payment: payment.value,
+      name: name.value.trim(),
+      tel: tel.value.trim(),
+      email: email.value.trim(),
+      address: address.value.trim(),
+      payment: payment.value.trim(),
     }
     createOrder(user);
     orderForm.reset();
@@ -230,13 +230,17 @@ function renderCart() {
 }
 //驗證表單
 function formValidate() {
+  const inputs = orderForm.querySelectorAll('input');
   const msgs = orderForm.querySelectorAll('[data-msg]');
+  inputs.forEach(item => item.classList.remove("is-invalid"));
   msgs.forEach(item => item.textContent = "");
   errors = validate(orderForm, constraints);
   //console.log(errors);
   if (errors) {
     Object.keys(errors).forEach(item => {
       const msg = orderForm.querySelector(`[data-msg=${item}]`);
+      const input = orderForm.querySelector(`[name=${item}]`);
+      input.classList.add("is-invalid");
       let str = "";
       if (errors[item].length > 1) {
         str = errors[item].join("<br>");
