@@ -71,7 +71,15 @@ function init() {
   productList.addEventListener("click", e => {
     e.preventDefault();
     if (!e.target.dataset.productId) return;
-    addCartItem(e.target.dataset.productId);
+    const existIndex = cartData.carts.findIndex(item=> item.product.id === e.target.dataset.productId);
+    if(existIndex===-1){
+      addCartItem(e.target.dataset.productId);
+    }
+    else{
+      const id = cartData.carts[existIndex].id;
+      const qty = cartData.carts[existIndex].quantity;
+      editCartQty(id,qty+1)
+    }
   })
   cartList.addEventListener("click", e => {
     e.preventDefault();
@@ -230,7 +238,7 @@ function renderCart() {
 }
 //驗證表單
 function formValidate() {
-  const inputs = orderForm.querySelectorAll('input');
+  const inputs = orderForm.querySelectorAll('input,select');
   const msgs = orderForm.querySelectorAll('[data-msg]');
   inputs.forEach(item => item.classList.remove("is-invalid"));
   msgs.forEach(item => item.textContent = "");

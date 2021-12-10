@@ -467,11 +467,12 @@
               <label for="customerPayment" class="form-label">交易方式</label>
               <div class="position-relative">
                 <select class="form-select" id="customerPayment" name="交易方式">
-                  <option value="ATM" selected>ATM</option>
+                  <option value="" disabled selected>--請選擇交易方式--</option>
+                  <option value="ATM">ATM</option>
                   <option value="信用卡">信用卡</option>
                   <option value="超商付款">超商付款</option>
                 </select>
-                <!-- <span class="message" data-msg="交易方式"></span> -->
+                <span class="message" data-msg="交易方式"></span>
               </div>
             </div>
             <button type="submit" class="js-orderBtn btn-lg btn-black d-block w-255px mx-auto">送出預訂資料</button>
